@@ -1,6 +1,6 @@
 {
   "name": "@kyvrixon/async-queue",
-  "version": "1.0.0-beta.1.1",
+  "version": "1.0.0-beta.1.2",
   "description": "Async queue",
   "main": "index.js",
   "type": "module",
