@@ -1,0 +1,22 @@
+{
+  "name": "@kyvrixon/async-queue",
+  "version": "1.0.0-beta.1.1",
+  "description": "Async queue",
+  "main": "index.js",
+  "type": "module",
+  "author": "Kyvrixon",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4"
+  },
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "./lib/logger.js",
+    "./lib/queue.js",
+    "index.d.ts"
+  ]
+}
