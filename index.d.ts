@@ -37,7 +37,7 @@ declare module "@kyvrixon/async-queue" {
 
         /**
          * Starts processing the tasks in the queue.
-         *
+         * @deprecated Soon will be removed in the next minor update
          * @example
          * await queue.start(); // Starts processing tasks in the queue
          */
