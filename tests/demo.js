@@ -34,10 +34,6 @@ const start = Date.now();
         return "Hello World!"; // Return a result
     });
 
-    // Start the queue processing (Deprecated but included for demonstration)
-    console.log(`[${(Date.now() - start).toString().padStart(5)}ms] [Queue] Starting the queue`);
-    await queue.start();
-
     // Retrieve and log results of each task
     console.log(`[${(Date.now() - start).toString().padStart(5)}ms] [Queue] Retrieving results`);
     const result1 = await queue.getResult("Task 1");

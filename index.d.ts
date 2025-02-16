@@ -9,6 +9,7 @@ declare module "@kyvrixon/async-queue" {
         tasks: Map<string, { name: string; task: Function; id: string }>;
         results: Map<string, any>;
         debug: boolean;
+        started: boolean;
 
         /**
          * Creates an instance of Queue.
