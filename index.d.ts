@@ -9,7 +9,6 @@ declare module "@kyvrixon/async-queue" {
         tasks: Map<string, { name: string; task: Function; id: string }>;
         results: Map<string, any>;
         debug: boolean;
-        hasStarted: boolean;
 
         /**
          * Creates an instance of Queue.
@@ -20,7 +19,7 @@ declare module "@kyvrixon/async-queue" {
          * const queue = new Queue("MyQueue", true); // Queue with debug logging enabled
          */
         constructor(
-            name: string,
+            name?: string | "MyQueue",
             debug?: boolean
         );
 
@@ -37,9 +36,11 @@ declare module "@kyvrixon/async-queue" {
 
         /**
          * Starts processing the tasks in the queue.
-         * @deprecated Soon will be removed in the next minor update
+         *
+         * @deprecated This method is not necessary anymore as tasks are processed automatically.
+         *             It will be removed in the next major update.
          * @example
-         * await queue.start(); // Starts processing tasks in the queue
+         * await queue.start(); // Starts processing tasks in the queue (not necessary)
          */
         start(): Promise<void>;
 
