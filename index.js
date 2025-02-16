@@ -1,7 +1,4 @@
 import Queue from "./lib/queue.js";
 
-// For ESM compatibility
-export default Queue;
-
-// For CommonJS compatibility (experimental)
-module.exports = Queue;
+// For ESM and CommonJS compatibility
+export { Queue as default };
